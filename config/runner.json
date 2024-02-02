@@ -1,9 +1,14 @@
 {
   "suites": {
-    "ecdsa-rdfc-2019": {"tags": ["ecdsa-rdfc-2019"]},
+    "ecdsa-rdfc-2019": {
+      "tags": ["ecdsa-rdfc-2019"],
+      "issuerName": "Digital Bazaar"
+    },
     "ecdsa-sd-2023": {
       "tags": ["ecdsa-sd-2023"],
+      "issuerName": "Digital Bazaar",
       "vcHolder": {
+        "holderName": "Digital Bazaar",
         "tags": ["vcHolder"]
       }
     }
