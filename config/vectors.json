@@ -3,17 +3,17 @@
     "ecdsa-rdfc-2019": {
       "keyTypes": ["P-256", "P-384"],
       "credentials": {
-        "create": {"document": "./mocks/valid/document.json"},
-        "verify": {"document": "./mocks/valid/document.json"},
-        "interop": {"document": "./mocks/valid/document.json"}
+        "create": {"document": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windDoc.json"},
+        "verify": {"document": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windDoc.json"},
+        "interop": {"document": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windDoc.json"}
       }
     },
     "ecdsa-sd-2023": {
       "keyTypes": ["P-256"],
       "credentials": {
         "create": {
-          "document": "./mocks/valid/document.json",
-          "mandatoryPointers": "./mocks/valid/mandatoryPointers.json"
+          "document": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windDoc.json",
+          "mandatoryPointers": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windMandatory.json"
         },
         "verify": {
           "subjectNestedObjects": {
@@ -22,15 +22,15 @@
             "selectivePointers": "./mocks/valid/selectivePointers.json"
           },
           "subjectHasArrays": {
-            "document": "./mocks/achievement/document.json",
-            "mandatoryPointers": "./mocks/achievement/mandatoryPointers.json",
-            "selectivePointers": "./mocks/achievement/selectivePointers.json"
+            "document": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windDoc.json",
+            "mandatoryPointers": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windMandatory.json",
+            "selectivePointers": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windSelective.json"
           }
         },
         "interop": {
-          "document": "./mocks/valid/document.json",
-          "mandatoryPointers": "./mocks/valid/mandatoryPointers.json",
-          "selectivePointers": "./mocks/valid/selectivePointers.json"
+          "document": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windDoc.json",
+          "mandatoryPointers": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windMandatory.json",
+          "selectivePointers": "./input/vc-di-ecdsa/TestVectors/ecdsa-sd-2023/windSelective.json"
         }
       }
     }
